@@ -5,27 +5,32 @@
              BackgroundImage="main_bg.png">
 
     <AbsoluteLayout>
-        <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.2, 200, 200" 
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.2, 200, 400" 
                 AbsoluteLayout.LayoutFlags="PositionProportional">
-            <Image Source="main_img.png" />
-            <Image Source="main_lbl.png"/>
+            <Image Source="main_img.png"/>
+            <Image Source="main_lbl.png" HeightRequest="90" Margin="0, 10, 0, 0"/>
         </StackLayout>
-        <Button 
-            Text="Nowy zestaw"
-            Clicked="NewGameBtn_Clicked"
-            BackgroundColor="White"
-            BorderRadius="50"
-            AbsoluteLayout.LayoutBounds="0.5, 0.8, 150, 50"
-            AbsoluteLayout.LayoutFlags="PositionProportional"/>
-        <Button 
-            x:Name="conti"
-            Text="Kontynuuj"
-            Clicked="ContinueGameBtn_Clicked"
-            BackgroundColor="White"
-            BorderRadius="50"
-            IsVisible="{Binding Flag}"
-            AbsoluteLayout.LayoutBounds="0.5, 0.9, 150, 50"
-            AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <StackLayout 
+                AbsoluteLayout.LayoutBounds="0.5, 0.9, 0.5, 150"
+                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+            <Button 
+                Text="Nowy zestaw"
+                Clicked="NewGameBtn_Clicked"
+                BackgroundColor="White"
+                HeightRequest="50"
+                BorderRadius="50"
+                VerticalOptions="CenterAndExpand"
+            />
+            <Button 
+                x:Name="conti"
+                Text="Kontynuuj"
+                Clicked="ContinueGameBtn_Clicked"
+                HeightRequest="50"
+                BackgroundColor="White"
+                BorderRadius="50"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="{Binding Flag}"/>
+        </StackLayout>
     </AbsoluteLayout>
 
 </ContentPage>

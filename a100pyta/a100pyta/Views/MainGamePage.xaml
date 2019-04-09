@@ -24,7 +24,7 @@
                         VerticalOptions="CenterAndExpand"
                         x:Name="label"
                         FontAttributes="Bold"
-                        Text="Zaczynamy..."/>
+                        Text="Zaczynamy!"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

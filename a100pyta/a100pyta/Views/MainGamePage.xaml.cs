@@ -37,12 +37,13 @@ namespace a100pyta.Views
 
         public void Load()
         {
+            if (label.Text == "Zaczynamy!")
+            {
+                label.Text = "Witaj ponownie!";
+                BackgroundImage = (BindingContext as MainGameViewModel).SetBackground();
+            }
+                            
             (BindingContext as MainGameViewModel).LoadQuestions();
-
-            var vm = (BindingContext as MainGameViewModel);
-            label.Text = vm.GetQuest();
-            counter.Text = vm.GetCount();
-            BackgroundImage = vm.ChangeBackground();
         }
     }
 }

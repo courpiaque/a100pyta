@@ -34,12 +34,10 @@ namespace a100pyta.ModelViews
             if (d.Exists)
             {
                 Flag = true;
-                System.Diagnostics.Debug.WriteLine("Jest katalog");
             }
             else if (!d.Exists)
             {
                 Flag = false;
-                System.Diagnostics.Debug.WriteLine("Nie ma katalogu");
             }
         }
     }
