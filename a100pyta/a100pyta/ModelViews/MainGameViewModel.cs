@@ -27,8 +27,8 @@ namespace a100pyta.ModelViews
             if (pytania.x == 100 && !d.Exists)
             {
                 Directory.CreateDirectory(dir);
-                RateUs();
                 d = new DirectoryInfo(dir);
+                RateUs();              
             }
 
             if (pytania.x % 9 == 0) DependencyService.Get<IAdInterstitial>().ShowAd();
