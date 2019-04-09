@@ -30,4 +30,12 @@ namespace a100pyta
             // Handle when your app resumes
         }
     }
+
+    public class AdMobView : ContentView
+    {
+        public AdMobView()
+        {
+
+        }
+    }
 }
