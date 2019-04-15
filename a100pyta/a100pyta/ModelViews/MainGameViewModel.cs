@@ -59,7 +59,7 @@ namespace a100pyta.ModelViews
 
         public async Task RateUs()
         {
-            var action = await App.Current.MainPage.DisplayAlert("Oceń nas!", "Podziel się z nami swoją oceną naszej aplikacji.", "Wystaw ocenę", "Nie dziękuję");
+            var action = await App.Current.MainPage.DisplayAlert("Oceń nas!", "Podziel się z nami swoją oceną naszej aplikacji.", "Wystaw ocenę", "Nie, dziękuję");
             if (action)
             {
                 Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=com.studio.billog.a100pyta"));
