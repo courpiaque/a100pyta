@@ -24,7 +24,7 @@ namespace a100pyta.ModelViews
         public string GetCount()
         {
             pytania.x++;
-            if (pytania.x == 100 && !d.Exists)
+            if (pytania.x == 50 && !d.Exists)
             {
                 Directory.CreateDirectory(dir);
                 d = new DirectoryInfo(dir);
